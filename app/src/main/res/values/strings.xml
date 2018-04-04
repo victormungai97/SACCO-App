@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">UCredit Essentials</string>
+    <string name="email_address_or_user_name">Email Address or User name</string>
+    <string name="email_address">Email Address</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_acc"><u>Create Account</u></string>
+    <string name="or">or</string>
+    <string name="facebook_description">This is the Facebook button</string>
+    <string name="google_plus_description">This is the Google+ button</string>
+    <string name="ucredit_united_saccos">UCREDIT United SACCOs</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="forgot_change_password"><u>Forgot/Change Password</u></string>
+    <string name="profile_image_description">This is the profile image</string>
+    <string name="name_placeholder">User Name</string>
+    <string name="current_date">Current Date</string>
+    <string name="nav_balance_statement">Balance and Statement</string>
+    <string name="nav_loan_application">Loan Application</string>
+    <string name="nav_bill_payments">Bill Payments</string>
+    <string name="nav_inter_account_transfer">Inter Account Transfer</string>
+    <string name="nav_fixed_deposit">Fixed Deposit</string>
+    <string name="nav_standing_orders">Standing Orders</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_forex">Forex</string>
+    <string name="nav_sacco_locations">SACCO Locations</string>
+    <string name="nav_settings">Settings</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

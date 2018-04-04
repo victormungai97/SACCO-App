@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "925164980198",
+    "firebase_url": "https://ucreditessentials-2b6aa.firebaseio.com",
+    "project_id": "ucreditessentials-2b6aa",
+    "storage_bucket": "ucreditessentials-2b6aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925164980198:android:d021b72f88e93e96",
+        "android_client_info": {
+          "package_name": "ke.co.venturisys.ucreditessentials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925164980198-dhuq9pfch3llsesla25pnhdlb9m0in5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmM8RjcjR8T5rLT1tJJYZAr-S6FmnW2E4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

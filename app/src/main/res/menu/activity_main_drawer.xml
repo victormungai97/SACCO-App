@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_balance_statement"
+            android:icon="@drawable/ic_balance_statement"
+            android:title="@string/nav_balance_statement" />
+
+        <item
+            android:id="@+id/nav_loan_application"
+            android:icon="@drawable/ic_loan_application"
+            android:title="@string/nav_loan_application" />
+
+        <item
+            android:id="@+id/nav_standing_orders"
+            android:icon="@drawable/ic_standing_orders"
+            android:title="@string/nav_standing_orders" />
+
+        <item
+            android:id="@+id/nav_bill_payments"
+            android:icon="@drawable/ic_bill_payments"
+            android:title="@string/nav_bill_payments" />
+
+        <item
+            android:id="@+id/nav_fixed_deposit"
+            android:icon="@drawable/ic_fixed_deposit"
+            android:title="@string/nav_fixed_deposit" />
+
+        <item
+            android:id="@+id/nav_inter_account_transfer"
+            android:icon="@drawable/ic_account_transfer"
+            android:title="@string/nav_inter_account_transfer" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_notifications_badge"
+            android:title="@string/nav_notifications" />
+        <item
+            android:id="@+id/nav_forex"
+            android:title="@string/nav_forex" />
+        <item
+            android:id="@+id/nav_sacco_locations"
+            android:icon="@drawable/ic_location_pointer"
+            android:title="@string/nav_sacco_locations" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/nav_settings" />
+    </group>
+
+</menu>
