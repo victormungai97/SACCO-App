@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/edit_profile_page_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/item_offset"
+                android:gravity="center"
+                android:padding="@dimen/general_padding"
+                android:text="@string/edit_profile_placeholder"
+                android:textColor="@color/colorSomething"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/name_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/item_offset"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/item_offset"
+                    android:layout_weight="1"
+                    android:background="@color/colorText"
+                    android:baselineAligned="false">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/item_offset"
+                        android:padding="@dimen/general_padding"
+                        android:textColorHint="@color/white"
+                        app:errorTextAppearance="@style/error_appearance"
+                        app:hintTextAppearance="@style/WhiteTextAppearance.App.TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorText"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/ic_profile"
+                            android:hint="@string/name_placeholder"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/white"
+                            android:textSize="18sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/email_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/item_offset"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/item_offset"
+                    android:layout_weight="1"
+                    android:background="@color/colorText"
+                    android:baselineAligned="false">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/item_offset"
+                        android:padding="@dimen/general_padding"
+                        android:textColorHint="@color/white"
+                        app:errorTextAppearance="@style/error_appearance"
+                        app:hintTextAppearance="@style/WhiteTextAppearance.App.TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/input_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorText"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/ic_email"
+                            android:hint="@string/email_address_placeholder"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/white"
+                            android:textSize="18sp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/item_offset"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/item_offset"
+                    android:background="@color/colorText"
+                    android:padding="@dimen/general_padding"
+                    android:textColorHint="@color/white"
+                    app:errorTextAppearance="@style/error_appearance"
+                    app:hintTextAppearance="@style/WhiteTextAppearance.App.TextInputLayout">
+
+                    <net.rimoto.intlphoneinput.IntlPhoneInput
+                        android:id="@+id/input_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        app:flagPaddingBottom="4dp"
+                        app:flagPaddingEnd="4dp"
+                        app:flagPaddingStart="4dp"
+                        app:flagPaddingTop="4dp"
+                        app:textColor="#000000"
+                        app:textColorHint="@color/white"
+                        app:textSize="18sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/item_offset"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#3F51B5"
+                    android:padding="15dp"
+                    android:text="@string/submit"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

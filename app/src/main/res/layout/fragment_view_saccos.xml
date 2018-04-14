@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Renders recycler view and collapsing toolbar for view saccos page -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".fragments.ViewSaccosFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/recycler_view_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:layout_editor_absoluteY="441dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/view_saccos_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:background="@android:color/white"
+                android:clipToPadding="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/item_offset"
+                android:layout_marginStart="@dimen/item_offset"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/general_padding">
+
+                <TextView
+                    android:id="@+id/view_saccos_card_recycler_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:text="@string/registered_saccos"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

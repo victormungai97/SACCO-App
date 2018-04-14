@@ -1,0 +1,8 @@
+query ViewListOfSaccosQuery{
+  allSaccoses {
+    name
+    status
+    creationDate
+    icon
+  }
+}

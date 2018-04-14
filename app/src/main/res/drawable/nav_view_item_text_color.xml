@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Determine color of sliding menu item text when selected and not -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:color="@android:color/black" android:state_checked="true" />
-    <item android:color="@color/colorSomething" />
+    <item android:color="@android:color/black" />
 </selector>

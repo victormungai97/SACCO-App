@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "925164980198-rsv7guk1v685jntocpqlca3amif486pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ke.co.venturisys.ucreditessentials",
+            "certificate_hash": "fb860908e102b4caf1d5fe00ab76327c90e92ef5"
+          }
+        },
+        {
           "client_id": "925164980198-dhuq9pfch3llsesla25pnhdlb9m0in5o.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925164980198-dhuq9pfch3llsesla25pnhdlb9m0in5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

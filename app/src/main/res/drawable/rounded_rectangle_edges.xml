@@ -1,0 +1,9 @@
+<!-- Drawable provides a blue rectangular background with edges rounded -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/colorSomething" />
+
+    <corners android:radius="20dp" />
+
+</shape>

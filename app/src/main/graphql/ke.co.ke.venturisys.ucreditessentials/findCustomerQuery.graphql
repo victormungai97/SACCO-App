@@ -1,0 +1,15 @@
+# Here, we will query customer table
+# using email
+query FindCustomerQuery(
+  $email: String!
+)
+
+{
+  Customer(email: $email) {
+    name
+    phone
+    email
+    sacco
+    picture
+  }
+}

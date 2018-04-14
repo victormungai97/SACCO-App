@@ -1,0 +1,25 @@
+mutation addCustomerMutation (
+
+  $name: String!,
+  $email: String!,
+  $phone: String!,
+  $sacco: String!,
+)
+
+{
+  createCustomer (
+    email: $email
+    name: $name
+    phone: $phone
+    sacco: $sacco
+    picture: ""
+  )
+  {
+    # we still get a response like in query
+    email
+    name
+    phone
+    id
+    sacco
+  }
+}

@@ -93,7 +93,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_weight="1"
-                    android:background="@color/colorPrimary"
+                    android:background="#3F51B5"
                     android:text="@string/log_in"
                     android:textColor="#fff"
                     android:textSize="20sp" />

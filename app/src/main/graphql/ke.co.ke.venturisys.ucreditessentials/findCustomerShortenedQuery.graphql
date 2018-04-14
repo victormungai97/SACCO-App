@@ -1,0 +1,10 @@
+query FindCustomerShortenedQuery(
+  $email: String!
+)
+
+{
+  Customer(email: $email) {
+    name
+    picture
+  }
+}

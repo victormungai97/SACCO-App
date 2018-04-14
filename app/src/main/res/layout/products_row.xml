@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="@string/number_placeholder"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="@string/product"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="@string/rate_placeholder"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="@string/modified_date"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</TableRow>

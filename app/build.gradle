@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'release-ucredit-key-venturi'
+            keyPassword 'release-ucredit-key-venturi'
+            storeFile file('/home/victor/.android/ReleaseKeystore/debug.keystore')
+            storePassword 'release-ucredit-store-venturi'
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "ke.co.venturisys.ucreditessentials"
@@ -14,26 +22,43 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig signingConfigs.config
         }
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation 'com.android.support:support-v4:27.1.0'
-    implementation 'com.android.support:design:27.1.0'
-    implementation 'com.android.support:cardview-v7:27.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
     // RecyclerView
-    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
     // Picasso image library
     implementation 'com.squareup.picasso:picasso:2.71828'
     // firebase implementation
     implementation 'com.google.firebase:firebase-core:12.0.1'
+    implementation 'com.google.firebase:firebase-auth:12.0.1'
+    // apollo library for GraphQL library
+    implementation 'com.apollographql.apollo:apollo-runtime:0.4.4'
+    // logs HTTP request and response data
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    // ok http library is used for network request
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    // facilitate signing in with Google
+    implementation 'com.google.android.gms:play-services-auth:12.0.1'
+    // facilitates easy input of international phone numbers
+    implementation 'net.rimoto:intlphoneinput:1.0.1'
+    // used to capitalise string
+    implementation 'org.apache.commons:commons-lang3:3.7'
 }
 
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.apollographql.android'

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#FAFAFA</color>
+    <color name="colorPrimaryDark">#F1F1F1</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorSomething">#76aadc</color>
     <color name="black">#111</color>
     <color name="darkerBlack">#000</color>
     <color name="white">#FFF</color>
     <color name="grey_ivory">#FFFFF0</color>
+    <color name="colorDot">#d32f2f</color>
+    <color name="colorText">#82B1FF</color>
+    <color name="colorProgressBar">#303F9F</color>
 </resources>

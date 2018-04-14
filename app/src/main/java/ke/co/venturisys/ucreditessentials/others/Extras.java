@@ -1,11 +1,14 @@
 package ke.co.venturisys.ucreditessentials.others;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -16,6 +19,7 @@ import android.text.Html;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.MemoryPolicy;
@@ -25,6 +29,8 @@ import com.squareup.picasso.RequestCreator;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import ke.co.venturisys.ucreditessentials.R;
 
@@ -99,7 +105,7 @@ public class Extras {
     public static void loadPictureToImageView(@NonNull HashMap<String, Object> source,
                                               int placeholder,
                                               @NonNull ImageView imageView,
-                                              boolean toTransform,
+                                              boolean toTransform, /* checks whether to make image view circular eg for profile image in slide menu*/
                                               boolean fit,
                                               boolean centerInside,
                                               boolean border) {
@@ -166,6 +172,45 @@ public class Extras {
         badge.setCount(count);
         icon.mutate();
         icon.setDrawableByLayerId(res, badge);
+    }
+
+    /**
+     * Method is used for checking valid email id format.
+     *
+     * @param email Address being entered
+     * @return boolean true for valid, false for invalid
+     */
+    public static boolean isEmailValid(String email) {
+        String expression = "^[\\w.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
+        Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
+
+    /*
+     * This method creates a snack bar in fragments that require internet
+     * so that providing an interface for the user to enable internet connection
+     */
+    public static void requestInternetAccess(@NonNull final Activity context) {
+        if (!isNetworkAvailable(context)) {
+            Toast.makeText(context, "Please enable internet connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    /**
+     * Method checks whether there is internet connectivity
+     * It calls the getActiveNetworkInfo and then checks if returns null, which it then returns
+     * as true for network connection or false if otherwise
+     *
+     * @param context Current context
+     * @return State of net connection
+     */
+    public static boolean isNetworkAvailable(Context context) {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        assert connectivityManager != null;
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
 }

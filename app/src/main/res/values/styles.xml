@@ -20,7 +20,7 @@
 
     <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
         <item name="spinBars">true</item>
-        <item name="color">@color/white</item>
+        <item name="color">@color/black</item>
     </style>
 
     <!-- Set color of floating hint -->
@@ -36,7 +36,7 @@
 
     <style name="NavigationDrawerStyle" parent="Base.TextAppearance.AppCompat">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/colorSomething</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <style name="AppTheme.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
@@ -52,5 +52,21 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Set color of floating hint to white -->
+    <style name="WhiteTextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Set color of floating hint -->
+    <style name="TextAppearance.App.WhiteTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Set custom color for Text Input Layout error -->
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorDot</item>
+        <item name="android:textSize">12sp</item>
+    </style>
 
 </resources>
